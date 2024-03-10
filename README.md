@@ -1,12 +1,10 @@
 # alpine-syntax-highlight
 
-Javascript syntax highlighting for x- attribute values in html for [Alpine JS](https://alpinejs.dev/)
+Javascript syntax highlighting for x- attribute values in html for [Alpine JS](https://alpinejs.dev/) in [`.astro`](https://astro.build/) files.
 
 ## Supported Files
 
-html
-php
-twig
+astro
 
 ## Credit
 

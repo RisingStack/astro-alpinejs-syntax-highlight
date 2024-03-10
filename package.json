@@ -1,20 +1,21 @@
 {
-  	"name": "alpinejs-syntax-highlight",
-	"displayName": "Alpine.js Syntax Highlight",
-	"description": "Javascript syntax highlighting for Alpine.js x- attributes",
-	"author": "Greg Ransons",
+	"name": "astro-alpinejs-syntax-highlight",
+	"displayName": "Astro Alpine.js Syntax Highlight",
+	"description": "Javascript syntax highlighting for Alpine.js x- attributes in Astro files",
+	"author": "Tamas Kadlecsik",
 	"license": "MIT",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"icon": "assets/alpine_logo.png",
-	"publisher": "sperovita",
+	"publisher": "RisingStack",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Sperovita/alpinejs-syntax-highlight.git"
+		"url": "https://github.com/RisingStack/astro-alpinejs-syntax-highlight"
 	},
 	"keywords": [
 		"alpine",
 		"alpinejs",
-		"alpine.js"
+		"alpine.js",
+		"astro"
 	],
 	"engines": {
 		"vscode": "^1.63.0"
@@ -25,18 +26,16 @@
 	"contributes": {
 		"languages": [
 			{
-			  "id": "inline-alpinejs"
+				"id": "inline-alpinejs"
 			}
 		],
 		"grammars": [
 			{
 				"language": "inline-alpinejs",
 				"path": "./syntaxes/injection.json",
-				"scopeName": "html.alpinejs.attribute",
+				"scopeName": "astro.alpinejs.attribute",
 				"injectTo": [
-					"text.html.derivative", 
-					"text.html.php", 
-					"text.html.twig"
+					"source.astro"
 				],
 				"embeddedLanguages": {
 					"meta.embedded.inline.alpinejs": "javascript"
